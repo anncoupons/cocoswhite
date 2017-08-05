@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+
+    <title>Hello World</title>
+	
+	  <!-- BEGIN VENDOR CSS-->
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+  
+   <!-- BEGIN Custom CSS-->
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <!-- END Custom CSS-->
+   <link rel="stylesheet" type="text/css" href="css/app.min.css">
+   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+</head>    
+
+<body>
+    
+	
+  <div class="app-content content container-fluid">
+    <div class="content-wrapper">
+      <div class="content-header row">
+      </div>
+      <div class="content-body">
+        <section class="flexbox-container">
+          <div class="col-md-4 offset-md-4 col-xs-10 offset-xs-1  box-shadow-2 p-0">
+            <div class="card border-grey border-lighten-3 m-0">
+              <div class="card-header no-border">
+                <div class="card-title text-xs-center">
+                  <div class="p-1">
+                    <img src="img/coco.jpg" alt="branding logo">
+                  </div>
+                </div>
+               
+              </div>
+              <div class="card-body collapse in">
+                <div class="card-block">
+                  <form class="form-horizontal form-simple" action="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/html/ltr/vertical-menu-template/index.html" novalidate="">
+                    <fieldset class="form-group position-relative has-icon-left mb-0">
+                      <input type="text" class="form-control form-control-lg input-lg" id="user-name" placeholder="Email" required="" aria-invalid="false">
+                      <div class="form-control-position">
+                        <i class="ft-user"></i>
+                      </div>
+                    </fieldset>
+					<br>
+                    <fieldset class="form-group position-relative has-icon-left">
+                      <input type="password" class="form-control form-control-lg input-lg" id="user-password" placeholder="Пароль" required="">
+                      <div class="form-control-position">
+                        <i class="fa fa-key"></i>
+                      </div>
+                    </fieldset>
+                    <fieldset class="form-group row">
+                      <div class="col-md-6 col-xs-12 text-xs-center text-md-right"><a href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/html/ltr/vertical-menu-template/recover-password.html" class="card-link">Забыли пароль?</a></div>
+                    </fieldset>
+                    <button type="submit" class="btn btn-primary btn-lg btn-block"><i class="ft-unlock"></i> Войти</button>
+                  </form>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="">
+                  
+                  <p class="float-sm-right text-xs-center m-0">Зарегестрироваться</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+	
+	
+	
+	
+
+</body>
+
+</html>
